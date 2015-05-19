@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="j8x-eq-J7O">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="uHT-P0-el6">
+            <objects>
+                <navigationController id="j8x-eq-J7O" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6bt-Ol-ekA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hNg-W9-DRJ" kind="relationship" relationship="rootViewController" id="spe-ST-AxD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kg5-bo-aW2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="442.5" y="367.5"/>
+        </scene>
+        <!--Simple Address Book-->
+        <scene sceneID="Lq9-4c-uIM">
+            <objects>
+                <viewController storyboardIdentifier="AddressBookViewController" title="Simple Address Book" id="hNg-W9-DRJ" customClass="AddressBookViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8PX-EV-OEN"/>
+                        <viewControllerLayoutGuide type="bottom" id="G1a-Nc-MP8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NoF-3p-sO1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hai-bh-Kqa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.35286472720000001" green="0.50781829280000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="0.0" id="Dgx-ig-R1h">
+                                    <size key="itemSize" width="300" height="40"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="AddressBookCollectionViewCell" reuseIdentifier="AddressBookCollectionViewCell" id="CSG-ta-8F7" customClass="AddressBookCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Blc-RZ-PsM">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="centerY" secondItem="Blc-RZ-PsM" secondAttribute="centerY" id="FzG-s1-d5U"/>
+                                            <constraint firstAttribute="trailing" secondItem="Blc-RZ-PsM" secondAttribute="trailing" constant="10" id="PDc-qU-VJD"/>
+                                            <constraint firstAttribute="trailing" secondItem="Blc-RZ-PsM" secondAttribute="trailing" constant="129" id="UIM-KB-crU">
+                                                <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                                            </constraint>
+                                            <constraint firstItem="Blc-RZ-PsM" firstAttribute="leading" secondItem="CSG-ta-8F7" secondAttribute="leading" constant="10" id="cuN-iY-dhg"/>
+                                            <constraint firstAttribute="centerX" secondItem="Blc-RZ-PsM" secondAttribute="centerX" id="hek-LE-T4t"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="Blc-RZ-PsM"/>
+                                            </mask>
+                                            <mask key="constraints">
+                                                <exclude reference="FzG-s1-d5U"/>
+                                                <exclude reference="PDc-qU-VJD"/>
+                                                <exclude reference="UIM-KB-crU"/>
+                                                <exclude reference="cuN-iY-dhg"/>
+                                                <exclude reference="hek-LE-T4t"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="subviews">
+                                                <include reference="Blc-RZ-PsM"/>
+                                            </mask>
+                                            <mask key="constraints">
+                                                <include reference="FzG-s1-d5U"/>
+                                                <exclude reference="PDc-qU-VJD"/>
+                                                <include reference="UIM-KB-crU"/>
+                                                <include reference="cuN-iY-dhg"/>
+                                                <exclude reference="hek-LE-T4t"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="displayName" destination="Blc-RZ-PsM" id="GAj-JF-Io4"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="hNg-W9-DRJ" id="yL3-Fq-3PO"/>
+                                    <outlet property="delegate" destination="hNg-W9-DRJ" id="iZ0-qR-BMQ"/>
+                                </connections>
+                            </collectionView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="uPh-vz-5zO">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                                <color key="color" red="1" green="0.1761759718" blue="0.20284505880000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hai-bh-Kqa" secondAttribute="bottom" id="BXd-ao-taO"/>
+                            <constraint firstItem="hai-bh-Kqa" firstAttribute="leading" secondItem="NoF-3p-sO1" secondAttribute="leading" id="LNl-0t-Uvf"/>
+                            <constraint firstItem="hai-bh-Kqa" firstAttribute="top" secondItem="8PX-EV-OEN" secondAttribute="top" constant="10" id="N9R-B3-wGU">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="centerY" secondItem="uPh-vz-5zO" secondAttribute="centerY" id="N9i-NI-Shh"/>
+                            <constraint firstAttribute="centerX" secondItem="uPh-vz-5zO" secondAttribute="centerX" id="aIY-iA-aZW"/>
+                            <constraint firstAttribute="trailing" secondItem="hai-bh-Kqa" secondAttribute="trailing" id="qbV-Zk-RB7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="hai-bh-Kqa"/>
+                                <exclude reference="uPh-vz-5zO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="N9i-NI-Shh"/>
+                                <exclude reference="aIY-iA-aZW"/>
+                                <exclude reference="BXd-ao-taO"/>
+                                <exclude reference="LNl-0t-Uvf"/>
+                                <exclude reference="N9R-B3-wGU"/>
+                                <exclude reference="qbV-Zk-RB7"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="hai-bh-Kqa"/>
+                                <include reference="uPh-vz-5zO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="N9i-NI-Shh"/>
+                                <include reference="aIY-iA-aZW"/>
+                                <include reference="BXd-ao-taO"/>
+                                <include reference="LNl-0t-Uvf"/>
+                                <include reference="N9R-B3-wGU"/>
+                                <include reference="qbV-Zk-RB7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Simple Address Book" id="HfN-SY-sTU" userLabel="Simple Address Book">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="EBE-eW-Uni">
+                            <connections>
+                                <action selector="addPerson:" destination="hNg-W9-DRJ" id="f6a-Bp-g3y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addBarButtonItem" destination="EBE-eW-Uni" id="xox-ND-Mde"/>
+                        <outlet property="collectionView" destination="hai-bh-Kqa" id="ggm-1K-UIt"/>
+                        <outlet property="loadingSpinner" destination="uPh-vz-5zO" id="pl9-Uq-sos"/>
+                        <segue destination="ZfW-Yb-jpe" kind="show" identifier="showAddressBookItemSegue" id="uLm-JP-ZFy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X9A-JX-5mt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1194" y="414.75"/>
+        </scene>
+        <!--Address Book Item Form View Controller-->
+        <scene sceneID="FIu-8Q-3ex">
+            <objects>
+                <viewController id="ZfW-Yb-jpe" customClass="AddressBookItemFormViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lkB-9v-NbY"/>
+                        <viewControllerLayoutGuide type="bottom" id="CxI-eN-vkc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="adj-Zw-mHk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zXF-Ky-DJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1938" y="414.75"/>
+        </scene>
+    </scenes>
+</document>
