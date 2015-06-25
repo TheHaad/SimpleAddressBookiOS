@@ -8,7 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		00594B2203C89A34A308F2AA /* libPods-AddressBookSampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED06AC194D5D54EE6D7061CE /* libPods-AddressBookSampleTests.a */; };
+		29AC49001B3CC79900F4E257 /* PersonParserXCTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AC48FF1B3CC79900F4E257 /* PersonParserXCTestCase.m */; };
+		29AC49021B3CC7A000F4E257 /* AddressBookViewControllerXCTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AC49011B3CC7A000F4E257 /* AddressBookViewControllerXCTestCase.m */; };
+		29AC49041B3CC7A900F4E257 /* FetchPersonServiceXCTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AC49031B3CC7A900F4E257 /* FetchPersonServiceXCTestCase.m */; };
+		29AC49061B3CC85800F4E257 /* TestUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A0423F411B0AAD32007C88D7 /* TestUtility.m */; };
+		29AC49071B3CC85B00F4E257 /* TestManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A0423F541B0ABE8F007C88D7 /* TestManagedObjectContext.m */; };
+		29AC49081B3CC87300F4E257 /* sampleUser.json in Resources */ = {isa = PBXBuildFile; fileRef = A0423F3A1B0AACA8007C88D7 /* sampleUser.json */; };
+		29AC49091B3CC87600F4E257 /* sampleUserError.json in Resources */ = {isa = PBXBuildFile; fileRef = A0423F431B0AB0D3007C88D7 /* sampleUserError.json */; };
 		62137FCF0D68751166129B17 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF349801DE012BA93A1380AC /* libPods.a */; };
+		73131F194B6D7232A6D32635 /* libPods-AddressBookSampleXCTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B10C85196F720188C1713A /* libPods-AddressBookSampleXCTests.a */; };
 		A011EDFB1B07AF1C00D69EFF /* NSURLConnectionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A011EDFA1B07AF1C00D69EFF /* NSURLConnectionProvider.m */; };
 		A011EDFF1B07B42F00D69EFF /* AddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A011EDFE1B07B42F00D69EFF /* AddressBookViewController.m */; };
 		A011EE061B07B70A00D69EFF /* AddressBookCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A011EE051B07B70A00D69EFF /* AddressBookCollectionViewCell.m */; };
@@ -49,6 +57,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		29AC48F61B3CC75600F4E257 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0DD2EBD1B0786CE00289FBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0DD2EC41B0786CE00289FBB;
+			remoteInfo = AddressBookSample;
+		};
 		A0DD2EE21B0786CE00289FBB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A0DD2EBD1B0786CE00289FBB /* Project object */;
@@ -59,8 +74,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05C993374E299963AE59300D /* Pods-AddressBookSampleXCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddressBookSampleXCTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AddressBookSampleXCTests/Pods-AddressBookSampleXCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		29AC48F01B3CC75600F4E257 /* AddressBookSampleXCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressBookSampleXCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29AC48F31B3CC75600F4E257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29AC48FF1B3CC79900F4E257 /* PersonParserXCTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonParserXCTestCase.m; sourceTree = "<group>"; };
+		29AC49011B3CC7A000F4E257 /* AddressBookViewControllerXCTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookViewControllerXCTestCase.m; sourceTree = "<group>"; };
+		29AC49031B3CC7A900F4E257 /* FetchPersonServiceXCTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchPersonServiceXCTestCase.m; sourceTree = "<group>"; };
 		322C904BF6BBA8B8BB3F73AC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4572962402BF02DDEAA7FC33 /* Pods-AddressBookSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddressBookSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AddressBookSampleTests/Pods-AddressBookSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D4B3A70D6D9DF460EB62FC0 /* Pods-AddressBookSampleXCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddressBookSampleXCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AddressBookSampleXCTests/Pods-AddressBookSampleXCTests.release.xcconfig"; sourceTree = "<group>"; };
 		788BB79498B2611933B47271 /* Pods-AddressBookSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddressBookSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AddressBookSampleTests/Pods-AddressBookSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		85398B25251A1729DEA644B3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A011EDF91B07AF1C00D69EFF /* NSURLConnectionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionProvider.h; sourceTree = "<group>"; };
@@ -136,11 +158,20 @@
 		A0DD2EF31B07900500289FBB /* FetchPersonService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchPersonService.m; sourceTree = "<group>"; };
 		A0DD2EFC1B07979D00289FBB /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		A0DD2EFD1B07979D00289FBB /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		A6B10C85196F720188C1713A /* libPods-AddressBookSampleXCTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AddressBookSampleXCTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED06AC194D5D54EE6D7061CE /* libPods-AddressBookSampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AddressBookSampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF349801DE012BA93A1380AC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		29AC48ED1B3CC75600F4E257 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73131F194B6D7232A6D32635 /* libPods-AddressBookSampleXCTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A0DD2EC21B0786CE00289FBB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -161,12 +192,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29AC48F11B3CC75600F4E257 /* AddressBookSampleXCTests */ = {
+			isa = PBXGroup;
+			children = (
+				29AC48FB1B3CC77200F4E257 /* Parsers */,
+				29AC48FC1B3CC77800F4E257 /* ViewControllers */,
+				29AC48FD1B3CC77E00F4E257 /* Services */,
+				29AC48F21B3CC75600F4E257 /* Supporting Files */,
+			);
+			path = AddressBookSampleXCTests;
+			sourceTree = "<group>";
+		};
+		29AC48F21B3CC75600F4E257 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				29AC48F31B3CC75600F4E257 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		29AC48FB1B3CC77200F4E257 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				29AC48FF1B3CC79900F4E257 /* PersonParserXCTestCase.m */,
+			);
+			name = Parsers;
+			sourceTree = "<group>";
+		};
+		29AC48FC1B3CC77800F4E257 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				29AC49011B3CC7A000F4E257 /* AddressBookViewControllerXCTestCase.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		29AC48FD1B3CC77E00F4E257 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				29AC49031B3CC7A900F4E257 /* FetchPersonServiceXCTestCase.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		29AC49051B3CC83C00F4E257 /* AddressBookSampleTestHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				A0423F391B0AAC87007C88D7 /* Fixtures */,
+				A0423F521B0ABE59007C88D7 /* Helpers */,
+				A0423F471B0AB74B007C88D7 /* Parsers */,
+			);
+			name = AddressBookSampleTestHelpers;
+			path = AddressBookSample;
+			sourceTree = "<group>";
+		};
 		47F485BE6884A007500C76BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				A0423F2D1B0A45CE007C88D7 /* CoreData.framework */,
 				FF349801DE012BA93A1380AC /* libPods.a */,
 				ED06AC194D5D54EE6D7061CE /* libPods-AddressBookSampleTests.a */,
+				A6B10C85196F720188C1713A /* libPods-AddressBookSampleXCTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,6 +264,8 @@
 				322C904BF6BBA8B8BB3F73AC /* Pods.release.xcconfig */,
 				4572962402BF02DDEAA7FC33 /* Pods-AddressBookSampleTests.debug.xcconfig */,
 				788BB79498B2611933B47271 /* Pods-AddressBookSampleTests.release.xcconfig */,
+				05C993374E299963AE59300D /* Pods-AddressBookSampleXCTests.debug.xcconfig */,
+				4D4B3A70D6D9DF460EB62FC0 /* Pods-AddressBookSampleXCTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -318,7 +406,8 @@
 				A0423F431B0AB0D3007C88D7 /* sampleUserError.json */,
 			);
 			name = Fixtures;
-			sourceTree = "<group>";
+			path = AddressBookSampleTests;
+			sourceTree = SOURCE_ROOT;
 		};
 		A0423F451B0AB731007C88D7 /* Services */ = {
 			isa = PBXGroup;
@@ -342,7 +431,8 @@
 				A0423F481B0AB766007C88D7 /* PersonParserSpec.mm */,
 			);
 			name = Parsers;
-			sourceTree = "<group>";
+			path = AddressBookSampleTests;
+			sourceTree = SOURCE_ROOT;
 		};
 		A0423F521B0ABE59007C88D7 /* Helpers */ = {
 			isa = PBXGroup;
@@ -353,13 +443,16 @@
 				A0423F541B0ABE8F007C88D7 /* TestManagedObjectContext.m */,
 			);
 			name = Helpers;
-			sourceTree = "<group>";
+			path = AddressBookSampleTests;
+			sourceTree = SOURCE_ROOT;
 		};
 		A0DD2EBC1B0786CE00289FBB = {
 			isa = PBXGroup;
 			children = (
 				A0DD2EC71B0786CE00289FBB /* AddressBookSample */,
+				29AC49051B3CC83C00F4E257 /* AddressBookSampleTestHelpers */,
 				A0DD2EE41B0786CE00289FBB /* AddressBookSampleTests */,
+				29AC48F11B3CC75600F4E257 /* AddressBookSampleXCTests */,
 				A0DD2EC61B0786CE00289FBB /* Products */,
 				8A8EEF35B29EBA56A7FA9170 /* Pods */,
 				47F485BE6884A007500C76BE /* Frameworks */,
@@ -371,6 +464,7 @@
 			children = (
 				A0DD2EC51B0786CE00289FBB /* AddressBookSample.app */,
 				A0DD2EE11B0786CE00289FBB /* AddressBookSampleTests.xctest */,
+				29AC48F01B3CC75600F4E257 /* AddressBookSampleXCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -410,11 +504,8 @@
 		A0DD2EE41B0786CE00289FBB /* AddressBookSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				A0423F521B0ABE59007C88D7 /* Helpers */,
-				A0423F471B0AB74B007C88D7 /* Parsers */,
 				A0423F461B0AB73B007C88D7 /* ViewControllers */,
 				A0423F451B0AB731007C88D7 /* Services */,
-				A0423F391B0AAC87007C88D7 /* Fixtures */,
 				A0DD2EE51B0786CE00289FBB /* Supporting Files */,
 			);
 			path = AddressBookSampleTests;
@@ -449,6 +540,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		29AC48EF1B3CC75600F4E257 /* AddressBookSampleXCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29AC48FA1B3CC75600F4E257 /* Build configuration list for PBXNativeTarget "AddressBookSampleXCTests" */;
+			buildPhases = (
+				1BE3073ACA01B9E6F4F6D3CD /* Check Pods Manifest.lock */,
+				29AC48EC1B3CC75600F4E257 /* Sources */,
+				29AC48ED1B3CC75600F4E257 /* Frameworks */,
+				29AC48EE1B3CC75600F4E257 /* Resources */,
+				576FF37C04AA7EAE54190EA9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29AC48F71B3CC75600F4E257 /* PBXTargetDependency */,
+			);
+			name = AddressBookSampleXCTests;
+			productName = AddressBookSampleXCTests;
+			productReference = 29AC48F01B3CC75600F4E257 /* AddressBookSampleXCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A0DD2EC41B0786CE00289FBB /* AddressBookSample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0DD2EEB1B0786CE00289FBB /* Build configuration list for PBXNativeTarget "AddressBookSample" */;
@@ -497,6 +608,10 @@
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Fahad Muntaz";
 				TargetAttributes = {
+					29AC48EF1B3CC75600F4E257 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = A0DD2EC41B0786CE00289FBB;
+					};
 					A0DD2EC41B0786CE00289FBB = {
 						CreatedOnToolsVersion = 6.2;
 					};
@@ -521,11 +636,21 @@
 			targets = (
 				A0DD2EC41B0786CE00289FBB /* AddressBookSample */,
 				A0DD2EE01B0786CE00289FBB /* AddressBookSampleTests */,
+				29AC48EF1B3CC75600F4E257 /* AddressBookSampleXCTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		29AC48EE1B3CC75600F4E257 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29AC49081B3CC87300F4E257 /* sampleUser.json in Resources */,
+				29AC49091B3CC87600F4E257 /* sampleUserError.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A0DD2EC31B0786CE00289FBB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -548,6 +673,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1BE3073ACA01B9E6F4F6D3CD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		576FF37C04AA7EAE54190EA9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AddressBookSampleXCTests/Pods-AddressBookSampleXCTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CAD64D92788A48FF8A39E289 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -611,6 +766,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		29AC48EC1B3CC75600F4E257 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29AC49061B3CC85800F4E257 /* TestUtility.m in Sources */,
+				29AC49001B3CC79900F4E257 /* PersonParserXCTestCase.m in Sources */,
+				29AC49041B3CC7A900F4E257 /* FetchPersonServiceXCTestCase.m in Sources */,
+				29AC49021B3CC7A000F4E257 /* AddressBookViewControllerXCTestCase.m in Sources */,
+				29AC49071B3CC85B00F4E257 /* TestManagedObjectContext.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A0DD2EC11B0786CE00289FBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -659,6 +826,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		29AC48F71B3CC75600F4E257 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0DD2EC41B0786CE00289FBB /* AddressBookSample */;
+			targetProxy = 29AC48F61B3CC75600F4E257 /* PBXContainerItemProxy */;
+		};
 		A0DD2EE31B0786CE00289FBB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A0DD2EC41B0786CE00289FBB /* AddressBookSample */;
@@ -686,6 +858,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		29AC48F81B3CC75600F4E257 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05C993374E299963AE59300D /* Pods-AddressBookSampleXCTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AddressBookSampleXCTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AddressBookSample.app/AddressBookSample";
+			};
+			name = Debug;
+		};
+		29AC48F91B3CC75600F4E257 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D4B3A70D6D9DF460EB62FC0 /* Pods-AddressBookSampleXCTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = AddressBookSampleXCTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AddressBookSample.app/AddressBookSample";
+			};
+			name = Release;
+		};
 		A0DD2EE91B0786CE00289FBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -823,6 +1037,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		29AC48FA1B3CC75600F4E257 /* Build configuration list for PBXNativeTarget "AddressBookSampleXCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29AC48F81B3CC75600F4E257 /* Debug */,
+				29AC48F91B3CC75600F4E257 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A0DD2EC01B0786CE00289FBB /* Build configuration list for PBXProject "AddressBookSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

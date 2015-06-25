@@ -21,10 +21,12 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Cedar (0.11.3)
+  - OCMock (3.1.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5)
   - Cedar (from `https://github.com/pivotal/cedar.git`)
+  - OCMock
 
 EXTERNAL SOURCES:
   Cedar:
@@ -38,5 +40,6 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   Cedar: ab1ea4e5c8af4ee4a8fa0452936679861876dc80
+  OCMock: a10ea9f0a6e921651f96f78b6faee95ebc813b92
 
-COCOAPODS: 0.37.1
+COCOAPODS: 0.37.2

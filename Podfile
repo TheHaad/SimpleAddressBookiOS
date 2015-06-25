@@ -10,3 +10,7 @@ pod 'AFNetworking', '~> 2.5'
 target :AddressBookSampleTests do
   pod 'Cedar', git: 'https://github.com/pivotal/cedar.git'
 end
+
+target :AddressBookSampleXCTests do
+  pod 'OCMock'
+end
