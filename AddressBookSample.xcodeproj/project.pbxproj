@@ -46,6 +46,8 @@
 		A0423F441B0AB0D3007C88D7 /* sampleUserError.json in Resources */ = {isa = PBXBuildFile; fileRef = A0423F431B0AB0D3007C88D7 /* sampleUserError.json */; };
 		A0423F491B0AB766007C88D7 /* PersonParserSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0423F481B0AB766007C88D7 /* PersonParserSpec.mm */; };
 		A0423F551B0ABE8F007C88D7 /* TestManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A0423F541B0ABE8F007C88D7 /* TestManagedObjectContext.m */; };
+		A0AA40BD1B574A9E00E60324 /* AddressBookItemFormViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0AA40BC1B574A9E00E60324 /* AddressBookItemFormViewControllerSpec.mm */; };
+		A0AA40BF1B57525F00E60324 /* AddressBookItemFormViewControllerXCTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AA40BE1B57525F00E60324 /* AddressBookItemFormViewControllerXCTestCase.m */; };
 		A0DD2ECB1B0786CE00289FBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DD2ECA1B0786CE00289FBB /* main.m */; };
 		A0DD2ECE1B0786CE00289FBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DD2ECD1B0786CE00289FBB /* AppDelegate.m */; };
 		A0DD2ED11B0786CE00289FBB /* AddressBookSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0DD2ECF1B0786CE00289FBB /* AddressBookSample.xcdatamodeld */; };
@@ -143,6 +145,8 @@
 		A0423F481B0AB766007C88D7 /* PersonParserSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PersonParserSpec.mm; sourceTree = "<group>"; };
 		A0423F531B0ABE8F007C88D7 /* TestManagedObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestManagedObjectContext.h; sourceTree = "<group>"; };
 		A0423F541B0ABE8F007C88D7 /* TestManagedObjectContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestManagedObjectContext.m; sourceTree = "<group>"; };
+		A0AA40BC1B574A9E00E60324 /* AddressBookItemFormViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AddressBookItemFormViewControllerSpec.mm; sourceTree = "<group>"; };
+		A0AA40BE1B57525F00E60324 /* AddressBookItemFormViewControllerXCTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookItemFormViewControllerXCTestCase.m; sourceTree = "<group>"; };
 		A0DD2EC51B0786CE00289FBB /* AddressBookSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressBookSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DD2EC91B0786CE00289FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0DD2ECA1B0786CE00289FBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -223,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				29AC49011B3CC7A000F4E257 /* AddressBookViewControllerXCTestCase.m */,
+				A0AA40BE1B57525F00E60324 /* AddressBookItemFormViewControllerXCTestCase.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -240,7 +245,6 @@
 			children = (
 				A0423F391B0AAC87007C88D7 /* Fixtures */,
 				A0423F521B0ABE59007C88D7 /* Helpers */,
-				A0423F471B0AB74B007C88D7 /* Parsers */,
 			);
 			name = AddressBookSampleTestHelpers;
 			path = AddressBookSample;
@@ -421,6 +425,7 @@
 			isa = PBXGroup;
 			children = (
 				A0423F2F1B0A478A007C88D7 /* AddressBookViewControllerSpec.mm */,
+				A0AA40BC1B574A9E00E60324 /* AddressBookItemFormViewControllerSpec.mm */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -504,6 +509,7 @@
 		A0DD2EE41B0786CE00289FBB /* AddressBookSampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				A0423F471B0AB74B007C88D7 /* Parsers */,
 				A0423F461B0AB73B007C88D7 /* ViewControllers */,
 				A0423F451B0AB731007C88D7 /* Services */,
 				A0DD2EE51B0786CE00289FBB /* Supporting Files */,
@@ -770,6 +776,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0AA40BF1B57525F00E60324 /* AddressBookItemFormViewControllerXCTestCase.m in Sources */,
 				29AC49061B3CC85800F4E257 /* TestUtility.m in Sources */,
 				29AC49001B3CC79900F4E257 /* PersonParserXCTestCase.m in Sources */,
 				29AC49041B3CC7A900F4E257 /* FetchPersonServiceXCTestCase.m in Sources */,
@@ -815,6 +822,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0AA40BD1B574A9E00E60324 /* AddressBookItemFormViewControllerSpec.mm in Sources */,
 				A0423F421B0AAD32007C88D7 /* TestUtility.m in Sources */,
 				A0423F301B0A478A007C88D7 /* AddressBookViewControllerSpec.mm in Sources */,
 				A0423F491B0AB766007C88D7 /* PersonParserSpec.mm in Sources */,

@@ -12,5 +12,6 @@
 @interface AddressBookItemFormViewController : FXFormViewController
 
 - (void)setupWithPerson:(Person *)person;
+- (void)saveButtonTapped;
 
 @end

@@ -34,6 +34,20 @@
                ReferencedContainer = "container:AddressBookSample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "29AC48EF1B3CC75600F4E257"
+               BuildableName = "AddressBookSampleXCTests.xctest"
+               BlueprintName = "AddressBookSampleXCTests"
+               ReferencedContainer = "container:AddressBookSample.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -49,6 +63,16 @@
                BlueprintIdentifier = "A0DD2EE01B0786CE00289FBB"
                BuildableName = "AddressBookSampleTests.xctest"
                BlueprintName = "AddressBookSampleTests"
+               ReferencedContainer = "container:AddressBookSample.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "29AC48EF1B3CC75600F4E257"
+               BuildableName = "AddressBookSampleXCTests.xctest"
+               BlueprintName = "AddressBookSampleXCTests"
                ReferencedContainer = "container:AddressBookSample.xcodeproj">
             </BuildableReference>
          </TestableReference>
